@@ -20,13 +20,7 @@ public class LedService {
 
     public LedService() {
         this.restTemplate = new RestTemplate();
-        // Timeout set karna ho to ye use karo:
-        /*
-        SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
-        factory.setConnectTimeout(5000);
-        factory.setReadTimeout(5000);
-        this.restTemplate = new RestTemplate(factory);
-        */
+
     }
 
     public String turnOnLed() {
